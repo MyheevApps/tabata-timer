@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Tabata Timer</string>
+    <string name="sets">Rounds</string>
+    <string name="set">Round</string>
+    <string name="get_ready">Get ready</string>
+    <string name="workout_time">Workout</string>
+    <string name="rest">Rest</string>
+    <string name="begin">Begin</string>
+    <string name="main">Main</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="total_time">Total time</string>
+    <string name="workout_complete">Workout complete!</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="bad">Bad</string>
+    <string name="normal">Normal</string>
+    <string name="good">Good</string>
+    <string name="how_you_feel">How do you feel?</string>
+    <string name="rate_us">Rate us</string>
+</resources>

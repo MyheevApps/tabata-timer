@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Табата таймер</string>
+    <string name="sets">Раунды</string>
+    <string name="set">Раунд</string>
+    <string name="get_ready">Подготовка</string>
+    <string name="workout_time">Тренировка</string>
+    <string name="rest">Отдых</string>
+    <string name="begin">Начать</string>
+    <string name="main">Главная</string>
+    <string name="start">Старт</string>
+    <string name="stop">Стоп</string>
+    <string name="total_time">Общее время</string>
+    <string name="workout_complete">Тренировка окончена!</string>
+    <string name="congratulations">Поздравляем!</string>
+    <string name="bad">Плохо</string>
+    <string name="normal">Нормально</string>
+    <string name="good">Отлично</string>
+    <string name="how_you_feel">Как себя чувствете?</string>
+    <string name="rate_us">Оцените нас</string>
+</resources>
