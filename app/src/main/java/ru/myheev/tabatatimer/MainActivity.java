@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
             totalWorkoutSeconds = (workoutSeconds * sets) + (restWorkout * sets);
             totalWorkoutSeconds += getReadySeconds;
         } else totalWorkoutSeconds = workoutSeconds + getReadySeconds;
-        String str = changeTimeFormat(totalWorkoutSeconds);
-        tvTotalTime.setText(str);
+        String totalText = changeTimeFormat(totalWorkoutSeconds);
+        tvTotalTime.setText(totalText);
     }
 }
