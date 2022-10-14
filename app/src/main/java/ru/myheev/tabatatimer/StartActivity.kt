@@ -40,16 +40,14 @@ class StartActivity : AppCompatActivity() {
         ivGetReadyPlus.setOnClickListener {
             getReadySeconds += 5
             countCommonTime()
-            val currentTime = changeTimeFormat(getReadySeconds)
-            tvGetReadyTime.text = currentTime
+            tvGetReadyTime.text = changeTimeFormat(getReadySeconds)
         }
 
         ivGetReadyMinus.setOnClickListener {
             if (getReadySeconds > 5) {
                 getReadySeconds -= 5
                 countCommonTime()
-                val currentTime = changeTimeFormat(getReadySeconds)
-                tvGetReadyTime.text = currentTime
+                tvGetReadyTime.text = changeTimeFormat(getReadySeconds)
             }
         }
 
@@ -70,32 +68,28 @@ class StartActivity : AppCompatActivity() {
         ivWorkoutPlus.setOnClickListener {
             workoutSeconds += 5
             countCommonTime()
-            val currentTime = changeTimeFormat(workoutSeconds)
-            tvWorkoutTime.text = currentTime
+            tvWorkoutTime.text = changeTimeFormat(workoutSeconds)
         }
 
         ivWorkoutMinus.setOnClickListener {
             if (workoutSeconds > 5) {
                 workoutSeconds -= 5
                 countCommonTime()
-                val currentTime = changeTimeFormat(workoutSeconds)
-                tvWorkoutTime.text = currentTime
+                tvWorkoutTime.text = changeTimeFormat(workoutSeconds)
             }
         }
 
         ivRestPlus.setOnClickListener { v: View? ->
             restWorkout += 5
             countCommonTime()
-            val currentTime = changeTimeFormat(restWorkout)
-            tvRestTime.text = currentTime
+            tvRestTime.text = changeTimeFormat(restWorkout)
         }
 
         ivRestMinus.setOnClickListener { v: View? ->
             if (restWorkout > 5) {
                 restWorkout -= 5
                 countCommonTime()
-                val currentTime = changeTimeFormat(restWorkout)
-                tvRestTime.text = currentTime
+                tvRestTime.text = changeTimeFormat(restWorkout)
             }
         }
 
@@ -142,10 +136,9 @@ class StartActivity : AppCompatActivity() {
 
     private fun countCommonTime() {
         if (sets > 1) {
-            totalWorkoutSeconds = workoutSeconds * sets + restWorkout * sets
+            totalWorkoutSeconds = workoutSeconds * sets + (restWorkout * (sets - 1))
             totalWorkoutSeconds += getReadySeconds
         } else totalWorkoutSeconds = workoutSeconds + getReadySeconds
-        val str = changeTimeFormat(totalWorkoutSeconds)
-        tvTotalTime.text = str
+        tvTotalTime.text = changeTimeFormat(totalWorkoutSeconds)
     }
 }
